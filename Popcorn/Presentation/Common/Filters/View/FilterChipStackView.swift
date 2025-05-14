@@ -33,7 +33,7 @@ struct FilterChipStackView: View {
 }
 
 #Preview {
-    let useCase = AppDIContainer.shared.fetchMoviesUseCase
+    let useCase = AppDI.container.fetchMoviesUseCase
     let viewModel = DiscoverViewModel(coordinator: DiscoverCoordinator(), fetchMoviesListUseCase: useCase)
     viewModel.applyFilters(
         FilterOptions(

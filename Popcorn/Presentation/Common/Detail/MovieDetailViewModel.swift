@@ -8,7 +8,7 @@
 import Combine
 import Foundation
 
-final class MovieDetailsViewModel: ObservableObject {
+class MovieDetailsViewModel: ObservableObject {
     @Published var state: MovieDetailsViewState = .init()
 
     private let movieId: Int

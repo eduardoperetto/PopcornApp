@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DateRangeFilter {
+struct DateRangeFilter: Equatable {
     var start: String?
     var end: String?
 }

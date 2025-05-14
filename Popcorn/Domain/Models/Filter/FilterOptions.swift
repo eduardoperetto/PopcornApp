@@ -70,3 +70,7 @@ extension FilterOptions {
         }
     }
 }
+
+// MARK: - FilterOptions + Equatable
+
+extension FilterOptions: Equatable {}

@@ -112,3 +112,7 @@ enum SpokenLanguage: String, SelectionPickable {
         self.init(rawValue: isoCode)
     }
 }
+
+// MARK: - SpokenLanguage + Equatable
+
+extension SpokenLanguage: Equatable {}

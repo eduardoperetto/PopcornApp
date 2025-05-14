@@ -195,7 +195,7 @@ struct FilterSheetView: View {
 #Preview {
     FilterSheetView(
         viewModel: DiscoverViewModel(
-            coordinator: DiscoverCoordinator(), fetchMoviesListUseCase: AppDIContainer.shared.fetchMoviesUseCase
+            coordinator: DiscoverCoordinator(), fetchMoviesListUseCase: AppDI.container.fetchMoviesUseCase
         )
     )
 }

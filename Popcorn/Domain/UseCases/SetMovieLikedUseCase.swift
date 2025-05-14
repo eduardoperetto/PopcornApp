@@ -8,7 +8,7 @@
 import Combine
 import Foundation
 
-final class SetMovieLikedUseCase {
+class SetMovieLikedUseCase {
     private let repository: MovieRepository
 
     init(repository: MovieRepository) {

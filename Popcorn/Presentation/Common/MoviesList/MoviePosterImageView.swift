@@ -5,7 +5,6 @@
 //  Created by Eduardo Raupp Peretto on 10/05/25.
 //
 
-import NukeUI
 import SwiftUI
 
 struct MoviePosterImageView: View {

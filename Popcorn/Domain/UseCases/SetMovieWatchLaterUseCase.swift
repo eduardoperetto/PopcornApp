@@ -8,7 +8,7 @@
 import Combine
 import Foundation
 
-final class SetMovieWatchLaterUseCase {
+class SetMovieWatchLaterUseCase {
     private let repository: MovieRepository
 
     init(repository: MovieRepository) {

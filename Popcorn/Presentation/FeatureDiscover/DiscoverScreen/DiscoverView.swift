@@ -22,6 +22,8 @@ struct DiscoverView: View {
                     .catchingErrorState(viewModel.state.error)
                     .refreshable { viewModel.fetchMovies() }
                     .filterable(viewModel: viewModel)
+                    .onAppear {
+                        viewModel.fetchMovies() }
             }
         }
         .navigationTitle("Discover")
@@ -29,7 +31,7 @@ struct DiscoverView: View {
 }
 
 #Preview {
-    let useCase = AppDIContainer.shared.fetchMoviesUseCase
+    let useCase = AppDI.container.fetchMoviesUseCase
     let viewModel = DiscoverViewModel(coordinator: DiscoverCoordinator(), fetchMoviesListUseCase: useCase)
     DiscoverView(viewModel: viewModel)
 }

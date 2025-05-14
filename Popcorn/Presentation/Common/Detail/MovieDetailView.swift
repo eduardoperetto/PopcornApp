@@ -170,8 +170,7 @@ struct MovieDetailsView: View {
             if let movie = viewModel.state.movie, !movie.spokenLanguages.isEmpty {
                 VStack(alignment: .leading, spacing: 8) {
                     SectionHeader(title: "Spoken Languages")
-                    WrapView(items: movie.spokenLanguages.map { $0.englishName })
-                        .padding(.top, 4)
+                    LabelsWrapView(items: movie.spokenLanguages.map { $0.englishName })
                 }
             }
         }
@@ -200,10 +199,10 @@ struct MovieDetailsView: View {
 
 #Preview {
     let viewModel = MovieDetailsViewModel(
-        movieId: 1241436,
-        fetchMovieDetailsUseCase: AppDIContainer.shared.fetchMovieDetailsUseCase,
-        setMovieLikedUseCase: AppDIContainer.shared.setMovieLikedUseCase,
-        setMovieWatchLaterUseCase: AppDIContainer.shared.setMovieWatchLaterUseCase
+        movieId: 370172,
+        fetchMovieDetailsUseCase: AppDI.container.fetchMovieDetailsUseCase,
+        setMovieLikedUseCase: AppDI.container.setMovieLikedUseCase,
+        setMovieWatchLaterUseCase: AppDI.container.setMovieWatchLaterUseCase
     )
     MovieDetailsView(viewModel: viewModel)
 }

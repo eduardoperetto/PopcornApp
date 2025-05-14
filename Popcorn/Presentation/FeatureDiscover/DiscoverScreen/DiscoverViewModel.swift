@@ -25,7 +25,6 @@ final class DiscoverViewModel: FilterableViewModel {
         self.fetchMoviesListUseCase = fetchMoviesListUseCase
         super.init()
         setupActions()
-        fetchMovies()
     }
 
     func fetchMovies() {
@@ -69,6 +68,10 @@ final class DiscoverViewModel: FilterableViewModel {
         fetchMovies()
     }
 
+    private func updateViewWithLoadedMovies() {
+        setMoviesState(currentLoadedMovies)
+    }
+
     private func setupActions() {
         state.actions = MovieListViewState.Actions(
             onMovieTapped: { [weak self] in self?.onMovieTapped($0) },
@@ -95,10 +98,6 @@ final class DiscoverViewModel: FilterableViewModel {
                 self?.handleLoadMoreResponse($0)
             }
             .store(in: &requestCancellable)
-    }
-
-    func updateViewWithLoadedMovies() {
-        setMoviesState(currentLoadedMovies)
     }
 
     private func resetMoviesRequest() {

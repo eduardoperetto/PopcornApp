@@ -23,15 +23,15 @@ final class LikeCoordinator: Coordinator<LikeRoute> {
         case .likedMovies:
             let viewModel = LikedMoviesViewModel(
                 coordinator: self,
-                fetchLikedMoviesUseCase: AppDIContainer.shared.fetchLikedMoviesUseCase
+                fetchLikedMoviesUseCase: AppDI.container.fetchLikedMoviesUseCase
             )
             return LikedMoviesView(viewModel: viewModel).erased
         case let .detail(id):
             let viewModel = MovieDetailsViewModel(
                 movieId: id,
-                fetchMovieDetailsUseCase: AppDIContainer.shared.fetchMovieDetailsUseCase,
-                setMovieLikedUseCase: AppDIContainer.shared.setMovieLikedUseCase,
-                setMovieWatchLaterUseCase: AppDIContainer.shared.setMovieWatchLaterUseCase
+                fetchMovieDetailsUseCase: AppDI.container.fetchMovieDetailsUseCase,
+                setMovieLikedUseCase: AppDI.container.setMovieLikedUseCase,
+                setMovieWatchLaterUseCase: AppDI.container.setMovieWatchLaterUseCase
             )
             return MovieDetailsView(viewModel: viewModel).erased
         }

@@ -37,3 +37,7 @@ extension MovieGenre: CaseIterable {
         ]
     }
 }
+
+// MARK: - MovieGenre + Equatable
+
+extension MovieGenre: Equatable {}

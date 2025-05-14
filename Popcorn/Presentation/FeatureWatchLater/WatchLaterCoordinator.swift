@@ -23,15 +23,15 @@ final class WatchLaterCoordinator: Coordinator<WatchLaterRoute> {
         case .watchLaterList:
             let viewModel = WatchLaterListViewModel(
                 coordinator: self,
-                fetchWatchLaterMoviesUseCase: AppDIContainer.shared.fetchWatchLaterMoviesUseCase
+                fetchWatchLaterMoviesUseCase: AppDI.container.fetchWatchLaterMoviesUseCase
             )
             return WatchLaterListView(viewModel: viewModel).erased
         case let .detail(id):
             let viewModel = MovieDetailsViewModel(
                 movieId: id,
-                fetchMovieDetailsUseCase: AppDIContainer.shared.fetchMovieDetailsUseCase,
-                setMovieLikedUseCase: AppDIContainer.shared.setMovieLikedUseCase,
-                setMovieWatchLaterUseCase: AppDIContainer.shared.setMovieWatchLaterUseCase
+                fetchMovieDetailsUseCase: AppDI.container.fetchMovieDetailsUseCase,
+                setMovieLikedUseCase: AppDI.container.setMovieLikedUseCase,
+                setMovieWatchLaterUseCase: AppDI.container.setMovieWatchLaterUseCase
             )
             return MovieDetailsView(viewModel: viewModel).erased
         }

@@ -10,7 +10,7 @@ import Foundation
 extension URL {
     static func buildImageURL(for path: String?, quality: ImageQuality) -> URL? {
         guard let path else { return nil }
-        let baseUrl = AppDIContainer.shared.environment.imageBaseUrl
+        let baseUrl = AppDI.container.environment.imageBaseUrl
         return URL(string: "/t/p/\(quality.rawValue)\(path)", relativeTo: baseUrl)
     }
 }

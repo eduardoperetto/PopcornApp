@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum SortOption: String {
+enum SortOption: String, Equatable {
     case popularityDesc = "popularity.desc"
     case releaseDateDesc = "release_date.desc"
     case voteAverageDesc = "vote_average.desc"

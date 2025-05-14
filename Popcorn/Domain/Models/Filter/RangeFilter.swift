@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RangeFilter<T: Comparable> {
+struct RangeFilter<T: Comparable & Equatable>: Equatable {
     var min: T?
     var max: T?
 }

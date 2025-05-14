@@ -7,11 +7,11 @@
 
 import Foundation
 
-final class AppDIContainer {
-    // MARK: - Singleton
+enum AppDI {
+    static var container: AppDIContainer = .init()
+}
 
-    static let shared = AppDIContainer()
-
+struct AppDIContainer {
     // MARK: - Environment
 
     let environment: PopcornEnvironment
@@ -40,7 +40,25 @@ final class AppDIContainer {
 
     // MARK: - Init
 
-    private init() {
+    init(environment: PopcornEnvironment, logger: LoggerProtocol, networkService: NetworkService, movieLocalDataSource: MovieLocalDataSource, movieRepository: MovieRepository, fetchMoviesUseCase: FetchMoviesListUseCase, fetchMovieDetailsUseCase: FetchMovieDetailsUseCase, fetchLikedMoviesUseCase: FetchLikedMoviesUseCase, setMovieLikedUseCase: SetMovieLikedUseCase, setMovieWatchLaterUseCase: SetMovieWatchLaterUseCase, fetchWatchLaterMoviesUseCase: FetchWatchLaterMoviesUseCase) {
+        self.environment = environment
+        self.logger = logger
+        self.networkService = networkService
+        self.movieLocalDataSource = movieLocalDataSource
+        self.movieRepository = movieRepository
+        self.fetchMoviesUseCase = fetchMoviesUseCase
+        self.fetchMovieDetailsUseCase = fetchMovieDetailsUseCase
+        self.fetchLikedMoviesUseCase = fetchLikedMoviesUseCase
+        self.setMovieLikedUseCase = setMovieLikedUseCase
+        self.setMovieWatchLaterUseCase = setMovieWatchLaterUseCase
+        self.fetchWatchLaterMoviesUseCase = fetchWatchLaterMoviesUseCase
+    }
+}
+
+// MARK: - Default Environment
+
+private extension AppDIContainer {
+    init() {
         self.environment = PopcornEnvironment()
         self.logger = LocalDebugger()
         self.networkService = URLSessionNetworkService(logger: logger)

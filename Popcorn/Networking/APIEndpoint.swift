@@ -30,3 +30,16 @@ extension APIEndpoint {
         return request
     }
 }
+
+extension APIEndpoint: Hashable, Equatable {
+    static func == (lhs: APIEndpoint, rhs: APIEndpoint) -> Bool {
+        lhs.request == rhs.request
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(baseURL)
+        hasher.combine(apiKey)
+        hasher.combine(route.path)
+        hasher.combine(route.method.rawValue)
+    }
+}

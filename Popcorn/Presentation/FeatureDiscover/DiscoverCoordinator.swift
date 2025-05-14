@@ -19,20 +19,20 @@ final class DiscoverCoordinator: Coordinator<DiscoverRoute> {
     }
 
     override func buildView(for route: DiscoverRoute) -> AnyView {
-        AppDIContainer.shared.logger.d("buildView for \(route)", tag: "DiscoverCoordinator")
+        AppDI.container.logger.d("buildView for \(route)", tag: "DiscoverCoordinator")
         switch route {
         case .discover:
             let viewModel = DiscoverViewModel(
                 coordinator: self,
-                fetchMoviesListUseCase: AppDIContainer.shared.fetchMoviesUseCase
+                fetchMoviesListUseCase: AppDI.container.fetchMoviesUseCase
             )
             return DiscoverView(viewModel: viewModel).erased
         case let .detail(id):
             let viewModel = MovieDetailsViewModel(
                 movieId: id,
-                fetchMovieDetailsUseCase: AppDIContainer.shared.fetchMovieDetailsUseCase,
-                setMovieLikedUseCase: AppDIContainer.shared.setMovieLikedUseCase,
-                setMovieWatchLaterUseCase: AppDIContainer.shared.setMovieWatchLaterUseCase
+                fetchMovieDetailsUseCase: AppDI.container.fetchMovieDetailsUseCase,
+                setMovieLikedUseCase: AppDI.container.setMovieLikedUseCase,
+                setMovieWatchLaterUseCase: AppDI.container.setMovieWatchLaterUseCase
             )
             return MovieDetailsView(viewModel: viewModel).erased
         }

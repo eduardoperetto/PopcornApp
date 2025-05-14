@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum NetworkError: Error {
+enum NetworkError: Error, Equatable {
     case invalidURL
     case requestFailed
     case decodingFailed
@@ -18,13 +18,25 @@ enum NetworkError: Error {
 
 extension NetworkError {
     static func mapError(_ error: Error) -> NetworkError {
-        switch error {
-        case URLError.badURL:
-            return .invalidURL
-        case URLError.notConnectedToInternet:
-            return .requestFailed
-        default:
-            return .unknownError(error.localizedDescription)
+        if let networkError = error as? NetworkError {
+            return networkError
         }
+
+        if error is DecodingError {
+            return .decodingFailed
+        }
+
+        if let urlError = error as? URLError {
+            switch urlError.code {
+            case .badURL:
+                return .invalidURL
+            case .notConnectedToInternet, .timedOut, .networkConnectionLost, .cannotFindHost, .cannotConnectToHost:
+                return .requestFailed
+            default:
+                return .unknownError(urlError.localizedDescription)
+            }
+        }
+
+        return .unknownError(error.localizedDescription)
     }
 }

@@ -11,7 +11,9 @@ import SwiftUI
 struct PopcornApp: App {
     var body: some Scene {
         WindowGroup {
-            AppTabsView()
+            if isNotTesting {
+                AppTabsView()
+            }
         }
     }
 }

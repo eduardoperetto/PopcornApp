@@ -20,12 +20,10 @@ open class Coordinator<Route: Hashable>: ObservableObject {
     }
 
     func navigate(to route: Route) {
-        AppDIContainer.shared.logger.d("navigate to \(route)", tag: "Coordinator")
         path.append(route)
     }
 
     func setRoot(_ route: Route) {
-        AppDIContainer.shared.logger.d("setRoot to \(route)", tag: "Coordinator")
         rootRoute = route
         rootView = buildView(for: route)
     }

@@ -8,7 +8,7 @@
 import Combine
 import Foundation
 
-final class FetchLikedMoviesUseCase {
+class FetchLikedMoviesUseCase {
     private let repository: MovieRepository
 
     init(repository: MovieRepository) {
