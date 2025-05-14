@@ -22,12 +22,12 @@ struct FilterSheetView: View {
             VStack {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 25) {
+                        genreSection
+                        sortBySection
                         languageSection
                         releaseYearSection
                         releaseDateRangeSection
-                        sortBySection
                         voteRangeSection
-                        genreSection
                     }
                     .padding(.vertical)
                 }

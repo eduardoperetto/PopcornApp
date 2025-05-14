@@ -22,11 +22,10 @@ struct DiscoverView: View {
                     .catchingErrorState(viewModel.state.error)
                     .refreshable { viewModel.fetchMovies() }
                     .filterable(viewModel: viewModel)
-                    .onAppear {
-                        viewModel.fetchMovies() }
             }
         }
         .navigationTitle("Discover")
+        .onAppear { viewModel.fetchMovies() }
     }
 }
 
