@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C4571C0D2DD43FB1006CAA86 /* InlineSnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = C4571C0C2DD43FB1006CAA86 /* InlineSnapshotTesting */; };
+		C4571C0F2DD43FB1006CAA86 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = C4571C0E2DD43FB1006CAA86 /* SnapshotTesting */; };
+		C4571C112DD43FB1006CAA86 /* SnapshotTestingCustomDump in Frameworks */ = {isa = PBXBuildFile; productRef = C4571C102DD43FB1006CAA86 /* SnapshotTestingCustomDump */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C4A8A2D02DCD59570035FC91 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C4571BE82DD42C31006CAA86 /* Popcorn.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = Popcorn.xctestplan; path = PopcornTests/Popcorn.xctestplan; sourceTree = "<group>"; };
 		C4A8A2BF2DCD59550035FC91 /* Popcorn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Popcorn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A8A2CF2DCD59570035FC91 /* PopcornTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopcornTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A8A2D92DCD59570035FC91 /* PopcornUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopcornUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,11 +60,6 @@
 			path = PopcornTests;
 			sourceTree = "<group>";
 		};
-		C4A8A2DC2DCD59570035FC91 /* PopcornUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PopcornUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4571C112DD43FB1006CAA86 /* SnapshotTestingCustomDump in Frameworks */,
+				C4571C0D2DD43FB1006CAA86 /* InlineSnapshotTesting in Frameworks */,
+				C4571C0F2DD43FB1006CAA86 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,9 +93,9 @@
 		C4A8A2B62DCD59550035FC91 = {
 			isa = PBXGroup;
 			children = (
+				C4571BE82DD42C31006CAA86 /* Popcorn.xctestplan */,
 				C4A8A2C12DCD59550035FC91 /* Popcorn */,
 				C4A8A2D22DCD59570035FC91 /* PopcornTests */,
-				C4A8A2DC2DCD59570035FC91 /* PopcornUITests */,
 				C4A8A2C02DCD59550035FC91 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -148,6 +153,9 @@
 			);
 			name = PopcornTests;
 			packageProductDependencies = (
+				C4571C0C2DD43FB1006CAA86 /* InlineSnapshotTesting */,
+				C4571C0E2DD43FB1006CAA86 /* SnapshotTesting */,
+				C4571C102DD43FB1006CAA86 /* SnapshotTestingCustomDump */,
 			);
 			productName = PopcornTests;
 			productReference = C4A8A2CF2DCD59570035FC91 /* PopcornTests.xctest */;
@@ -165,9 +173,6 @@
 			);
 			dependencies = (
 				C4A8A2DB2DCD59570035FC91 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				C4A8A2DC2DCD59570035FC91 /* PopcornUITests */,
 			);
 			name = PopcornUITests;
 			packageProductDependencies = (
@@ -209,6 +214,7 @@
 			mainGroup = C4A8A2B62DCD59550035FC91;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				C4571C0B2DD43FB1006CAA86 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C4A8A2C02DCD59550035FC91 /* Products */;
@@ -583,6 +589,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C4571C0B2DD43FB1006CAA86 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.18.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C4571C0C2DD43FB1006CAA86 /* InlineSnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4571C0B2DD43FB1006CAA86 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = InlineSnapshotTesting;
+		};
+		C4571C0E2DD43FB1006CAA86 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4571C0B2DD43FB1006CAA86 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+		C4571C102DD43FB1006CAA86 /* SnapshotTestingCustomDump */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4571C0B2DD43FB1006CAA86 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTestingCustomDump;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C4A8A2B72DCD59550035FC91 /* Project object */;
 }

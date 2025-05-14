@@ -1,0 +1,33 @@
+{
+  "configurations" : [
+    {
+      "id" : "51856ABC-CCEB-471C-902E-5A9BBCF99159",
+      "name" : "Test Scheme Action",
+      "options" : {
+        "commandLineArgumentEntries" : [
+          {
+            "argument" : "-isTesting"
+          }
+        ]
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Popcorn.xcodeproj",
+      "identifier" : "C4A8A2BE2DCD59550035FC91",
+      "name" : "Popcorn"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Popcorn.xcodeproj",
+        "identifier" : "C4A8A2CE2DCD59570035FC91",
+        "name" : "PopcornTests"
+      }
+    }
+  ],
+  "version" : 1
+}
