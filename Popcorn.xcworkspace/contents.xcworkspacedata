@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:App"
+      name = "App">
+      <FileRef
+         location = "group:Popcorn.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:SDKs"
+      name = "SDKs">
+      <FileRef
+         location = "group:PopcornNativeSDK/PopcornCore.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>

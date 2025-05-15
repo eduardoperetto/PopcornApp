@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b072917f-1ac3-4682-9bcb-f83195fdfe96" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Popcorn.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn.xcodeproj/xcshareddata/xcschemes/Popcorn.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/DTOs/GenreDTO.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/DTOs/MovieDTO.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/DTOs/MovieDetailResponseDTO.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/DTOs/MovieListResponseDTO.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/DTOs/MovieProviderDTO.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/DTOs/MovieProvidersResponseDTO.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/DTOs/ProductionCompanyDTO.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/DTOs/SpokenLanguageDTO.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/FilterOptions+QueryParams.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/LocalDataSource/CoreData/CoreDataMovieLocalDataSource.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/LocalDataSource/Entities/PopcornMovies.xcdatamodeld/PopcornMovies.xcdatamodel/contents" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/LocalDataSource/MovieLocalDataSource.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/Mappers/MovieDetailMapper.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/Mappers/MovieEntity+Movie.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/Mappers/MovieGenreMapper.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/Mappers/MovieListMapper.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/Mappers/MovieMapper.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/Mappers/MovieProvidersMapper.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/RemoteRoutes/Movie+ImageRequestURL.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/RemoteRoutes/MoviesAPIRoute.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Data/Repositories/MovieRepositoryImpl.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/Commons/OptionalWrapper.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/Commons/SelectionPickable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/Extensions/MovieDetail+Movie.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/Models/Filter/DateRangeFilter.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/Models/Filter/FilterDescription.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/Models/Filter/FilterOptions.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/Models/Filter/RangeFilter.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/Models/Filter/SortOption.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/Models/Movie.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/Models/MovieDetail.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/Models/MovieGenre.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/Models/MovieProvider.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/Models/PaginatedMovies.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/Models/ProductionCompany.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/Models/SpokenLanguage.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/Repositories/MovieRepository.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/UseCases/FetchLikedMoviesUseCase.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/UseCases/FetchMovieDetailUseCase.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/UseCases/FetchMoviesListUseCase.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/UseCases/FetchWatchLaterMoviesUseCase.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/UseCases/SetMovieLikedUseCase.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Domain/UseCases/SetMovieWatchLaterUseCase.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Networking/APIEndpoint.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Networking/APIRoute.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Networking/HTTPMethod.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Networking/ImageQuality.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Networking/NetworkError.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Networking/NetworkService.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Networking/URLSessionNetworkService.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/App/AppTabsView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/App/PopcornApp.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Assets.xcassets/AccentColor.colorset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Assets.xcassets/AppIcon.appiconset/popcorn-icon-rsz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Assets.xcassets/BackgroundColor.colorset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Assets.xcassets/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Assets.xcassets/DarkForegroundColor.colorset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Assets.xcassets/FilterColor.colorset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Assets.xcassets/FilterForegroundColor.colorset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Assets.xcassets/LightGrayBgColor.colorset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Assets.xcassets/PrimaryForegroundColor.colorset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Components/LabelsWrapView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Components/LikeButton.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Components/ScaleButtonStyle.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Components/WatchLaterButton.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Coordinator/Coordinator.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Coordinator/CoordinatorHostView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Detail/InnerViews/InfoCell.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Detail/InnerViews/MovieProviderView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Detail/InnerViews/PopcornAsyncImageView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Detail/InnerViews/ProductionCompanyView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Detail/InnerViews/RatingView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Detail/InnerViews/SectionHeader.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Detail/MovieDetailView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Detail/MovieDetailViewModel.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Detail/MovieDetailViewState.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Error/ErrorView+Modifier.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Error/ErrorView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Error/ErrorViewState.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Filters/View/DateSelectionView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Filters/View/FilterChipStackView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Filters/View/FilterChipView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Filters/View/FilterSheetView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Filters/View/FilterView+Modifier.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Filters/View/FilterableViewModel.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/Filters/View/GenreSelectionView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/MoviesList/MovieItemView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/MoviesList/MovieListViewState.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/MoviesList/MoviePosterImageView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/MoviesList/MoviesListView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/Common/View+Conditional.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/FeatureDiscover/DiscoverCoordinator.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/FeatureDiscover/DiscoverHostView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/FeatureDiscover/DiscoverScreen/DiscoverView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/FeatureDiscover/DiscoverScreen/DiscoverViewModel.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/FeatureLike/LikeCoordinator.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/FeatureLike/LikeHostView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/FeatureLike/LikedMoviesScreen/LikedMoviesView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/FeatureLike/LikedMoviesScreen/LikedMoviesViewModel.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/FeatureWatchLater/WatchLaterCoordinator.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/FeatureWatchLater/WatchLaterHostView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/FeatureWatchLater/WatchLaterListScreen/WatchLaterListView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Presentation/FeatureWatchLater/WatchLaterListScreen/WatchLaterListViewModel.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Preview Content/Preview Assets.xcassets/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Support/AppDIContainer.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Support/CommonExtensions/Double+Currency.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Support/CommonExtensions/Number+IsNotZero.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Support/CommonExtensions/String+Date.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Support/CommonExtensions/String+RunTime.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Support/CommonExtensions/View+AnyView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Support/Environment.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Support/IsNotTesting.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Support/Loggers/LocalDebugger.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Popcorn/Support/Loggers/LoggerProtocol.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Data/Mocks/DummyMovieRepository.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Data/Mocks/MockMovieLocalDataSource.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Data/Mocks/MockMovieRepository.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Data/MovieRepositoryImplTests.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Domain/FilterOptionsTests.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Domain/Mocks/FetchLikedMoviesUseCaseMock.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Domain/Mocks/FetchMovieDetailsUseCaseMock.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Domain/Mocks/FetchMoviesListUseCaseMock.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Domain/Mocks/FetchWatchLaterMoviesUseCaseMock.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Domain/Mocks/SetMovieLikedUseCaseMock.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Domain/Mocks/SetMovieWatchLaterUseCaseMock.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Domain/Stubs/FilterOptions+Stub.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Domain/Stubs/Movie+Stub.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Domain/Stubs/MovieDetails+Stub.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Domain/Stubs/PaginatedResponse+Stub.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Networking/Mocks/DummyDecodable.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Networking/Mocks/DummyRoute.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Networking/Mocks/MockNetworkService.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Networking/Mocks/MockURLProtocol.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Networking/URLSessionNetworkServiceTests.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Popcorn.xctestplan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Presentation/Mocks/CoordinatorMock.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Presentation/Mocks/MovieDetailsViewModelMock.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Presentation/UI/SnapshotTests.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Presentation/UI/__Snapshots__/SnapshotTests/test_FilterChipView.1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Presentation/UI/__Snapshots__/SnapshotTests/test_FilterSheetView_defaultState.1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Presentation/UI/__Snapshots__/SnapshotTests/test_FilterSheetView_withAppliedFilters.1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Presentation/UI/__Snapshots__/SnapshotTests/test_MovieDetailsView_content.1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Presentation/UI/__Snapshots__/SnapshotTests/test_MovieDetailsView_error.1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Presentation/UI/__Snapshots__/SnapshotTests/test_MovieDetailsView_loading.1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Presentation/UI/__Snapshots__/SnapshotTests/test_MovieItemView.1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Presentation/UI/__Snapshots__/SnapshotTests/test_MoviesListView.1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Presentation/ViewModels/DiscoverViewModelTests.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Presentation/ViewModels/FilerableViewModelTests.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Presentation/ViewModels/LikedMoviesViewModelTests.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Presentation/ViewModels/MovieDetailViewModelTests.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Presentation/ViewModels/WatchLaterListViewModelTests.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Support/AppDIContainer+Stub.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Support/BaseTestCase.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Support/Environment+Mock.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PopcornTests/Support/MockLogger.swift" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2x96wfp888o0tY7s5TDHcPEkdxz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "android.gradle.sync.needed": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/eduardorauppperetto/Git/personal/Popcorn/popcornShared"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b072917f-1ac3-4682-9bcb-f83195fdfe96" name="Changes" comment="" />
+      <created>1747338181288</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747338181288</updated>
+    </task>
+    <servers />
+  </component>
+</project>
