@@ -12,6 +12,9 @@
       location = "group:SDKs"
       name = "SDKs">
       <FileRef
+         location = "container:SDKs/PopcornCoreKMP/PopcornCoreKMP.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:PopcornNativeSDK/PopcornCore.xcodeproj">
       </FileRef>
    </Group>

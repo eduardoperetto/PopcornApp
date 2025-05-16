@@ -30,15 +30,6 @@ kotlin {
             isStatic = true
         }
     }
-
-    sourceSets {
-        commonMain.dependencies {
-            //put your multiplatform dependencies here
-        }
-        commonTest.dependencies {
-            implementation(libs.kotlin.test)
-        }
-    }
 }
 
 android {
@@ -51,4 +42,13 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+}
+
+dependencies {
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.rx.android)
+    implementation(libs.rx.java2)
+    implementation(libs.rx.kotlin)
+    implementation(libs.kotlinx.coroutines.play.services)
+    implementation(libs.kotlinx.coroutines.rx2)
 }
